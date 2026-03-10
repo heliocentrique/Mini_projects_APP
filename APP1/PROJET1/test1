@@ -1,0 +1,29 @@
+#include "client.h"
+#include <stdio.h>
+#include <ctype.h>
+#include <stdbool.h>
+#include <string.h>
+
+
+
+int decale(char l,int cle){
+
+    if (l >= 'A' && l <= 'Z') {
+        return (char) (((l - 'A' + n) % 26 + 26) % 26 + 'A');
+    }
+    
+    else if (l >= 'a' && l <= 'z') {
+        return (char) (((l - 'a' + n) % 26 + 26) % 26 + 'a');
+    }
+    else {
+        return l;
+    }
+}
+
+int main(){
+
+	char reponse[13];
+	strncpy(reponse, "elio is here", sizeof(reponse) - 1);
+	reponse[12] = '/0';
+	decale('A',3);
+}

@@ -1,0 +1,83 @@
+Recommandations sur l'utilisation des fichiers pour l'APP2.
+A lire absolument !
+
+
+****************************************************************
+**  Pour tout le monde                                        **
+****************************************************************
+
+Renseignez ici les noms des membres de votre binôme :
+
+Nom1 - prénom1 : RAFCA ZOUGHEIB - Elio
+Nom2 - prénom2 : AOUN - John
+Nom3 - prénom3 : MEHANNI - Lyes
+
+Si vous avez des commentaires, remarques etc. pour le rendu, vous pouvez les 
+mettre ici:
+
+. En supposant que tout le code donné foncionne on retrouve l'etude de complexité suivante : 
+- Lecture du fichier : O(l) ou l est le nombre de lignes dans le fichier.
+- Conversion du programme : O(n) ou n est le nombre de commandes.
+- Execution du programme : O(n+m) ou n est le nombre de commandes et m le nombre totale de commandes dans les blocks.
+- Affichage : O(p) ou p est la taille de la carte.
+
+--> Par suite, la complexite totale sera O(l+n+m+p).
+
+
+. Concernant le code, les actes I , II, et III sont finis completement.
+Nous avons tenté de réaliser l'acte 4, mais nous avons été confrontés à des problèmes de segmentation persistants. 
+Malgré l'utilisation d'affichages à chaque étape (utilisées comme un débogueur) et l'analyse avec Valgrind, nous
+n'avons pas eu le temps nécessaire pour les résoudre, mais nous vous prions de bien vouloir prendre en compte
+la logique implémentée (utilisation des { et ? dans le switch, ainsi que l'intégration des fonctions comme lire_bloc
+et le changement des types reçus par la pile).
+De plus, au lieu d'un graphique, nous avons effectué une étude détaillée de la complexité du code supposé fonctionner normalement.
+
+
+
+
+****************************************************************
+**  Langage Python                                            **
+****************************************************************
+
+Utilisez (et modifiez) le script "run.py" fourni.
+(Lire le debut de ce fichier pour une explication de comment lancer les tests.)
+
+
+Pour les tests de performance : lire le fichier LISEZMOI-perfs.txt
+
+
+****************************************************************
+**  Langage C                                                 **
+****************************************************************
+
+Compilation
+-----------
+Pour compiler :
+> make
+
+ou
+
+> gcc -Wall -Wextra main.c -o main curiosity.c interprete.c listes.c
+(Nous vous conseillons d'utiliser le compilateur clang plutôt que gcc.)
+
+
+Lancer un test
+--------------
+
+Test complet
+> ./main tests/<nom de test>.test
+
+Test en mode "pas à pas" :
+> ./main -d tests/<nom de test>.test
+
+
+Lancer une suite de tests
+-------------------------
+
+Tests fonctionnels :
+> ./tests/check.py c
+
+Tests en vérifiant les erreurs ou fuites mémoire:
+> ./tests/check.py --mem c
+
+Pour les tests de performance : lire le fichier LISEZMOI-perfs.txt
