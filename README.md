@@ -11,7 +11,7 @@ APP2 : Interpréteur Curiosity (Version Avancée) : Développement d'un moteur d
 APP3 : Arbres Phylogénétiques : Utilisation d'arbres binaires pour la classification taxonomique du vivant. Implémentation d'algorithmes récursifs pour la recherche, l'insertion d'espèces et l'analyse de caractéristiques biologiques.
 
 
-
+## 
 
 
 APP1: Cryptography & Stream Analysis: Implementation of encryption algorithms (sequence and move-based encryption) to secure data streams. Includes interactive client-server communication modules.
